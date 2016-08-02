@@ -1,11 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="Phazer">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Bloc Base Project</title>
-    <link rel="stylesheet" href="/styles/style.css">
+    <title>You Home?</title
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.css">
+		<link rel="stylesheet" href="http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.min.css">
+		<link rel="stylesheet" href="css/normalize.css">
+ 		<link rel="stylesheet" href="css/foundation.css">
+ 		<link rel="stylesheet" href="css/iconic-foundation.css">
+		<link rel="stylesheet" type="text/css" href="/styles/main.css">
 </head>
 <body>
-    <script src="/scripts/app.js"></script>
+		<nav class="navbar"></nav>
+
+		<ui-view></ui-view>
+		<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+		<!-- Angular 1 -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+		<!-- Angular UI Router-->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+		<!-- Firebase -->
+		<script src="https://www.gstatic.com/firebasejs/3.2.0.firebase.js"></script>
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+		<!-- jQuery -->
+		<script src="http://code.jquery.com/jquery-1.9.0rc1.js"></script>
+		<!-- Foundation -->
+		<script src="http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.js"></script>
+		<script src="http://cdn.jsdelivr.net/zurb/foundation-apps-1.2.0.min.js"></script>
+		<!-- More Foundation -->
+		<script src="http://cdn.jsdelivr.net/zurb/foundation-apps-templates-1.2.0.js"></script>
+		<script src="http://cdn.jsdelivr.net/zurb/foundation-apps-templates-1.2.0.min.js"></script>
+		<!-- Angular App Files -->
+		<script src="/scripts/app.js"></script>
 </body>
 </html>

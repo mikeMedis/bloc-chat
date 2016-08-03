@@ -2,16 +2,17 @@
 <html ng-app="blocchat">
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Phazer Chat App</title
+    <title>Chat Application</title
     <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="/styles/main.css">
+		<link rel="stylesheet" href="/styles/home.css">
+		<link rel="stylesheet" href="/styles/modal.css">
 </head>
 <body>
 
-		<div ng-view></div>
+		<ui-view></ui-view>
 
 		<!-- Angular 1.5.0 -->
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
@@ -19,9 +20,6 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.min.js"></script>
 		<!-- Firebase -->
 		<script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-auth.js"></script>
-		<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 		<script>
   	// Initialize Firebase
   	var config = {
@@ -31,20 +29,29 @@
     	storageBucket: "bloc-chat-73327.appspot.com",
   	};
   	firebase.initializeApp(config);
-		</script>
+	</script> -->
     <!-- AngularFire -->
 		<script src="https://cdn.firebase.com/libs/angularfire/2.0.1/angularfire.min.js"></script>
-		<!-- jQuery 3.x -->
-		<script   src="https://code.jquery.com/jquery-3.1.0.js"   integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk="   crossorigin="anonymous"></script>
+		<!-- Angular Cookies -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-cookies.js"></script>
+		<!-- jQuery -->
+		<script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+		<!-- Angular UI Bootstrap -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.0.1/ui-bootstrap-tpls.js"></script>
 		<!-- Bootstrap -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<!-- Angular app.js File -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+		<!--  App.js File -->
 		<script src="/scripts/app.js"></script>
+
 		<!-- ChatRoom Feature Files -->
 		<script src="/scripts/Room/HomeCtrl.js"></script>
 		<script src="/scripts/Room/Room.js"></script>
+
 		<!-- Modal Feature Files -->
 		<script src="/scripts/Modal/ModalCtrl.js"></script>
+		<!--Username Feature Files -->
+		<script src="/scripts/Username/UsernameCtrl.js"></script>
 
 </body>
 </html>

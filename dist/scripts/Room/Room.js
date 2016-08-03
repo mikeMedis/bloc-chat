@@ -1,6 +1,6 @@
 (function() {
 	function Room($firebaseArray) {
-		var roomsRef = new Firebase('https://bloc-chat-73327.firebaseio.com/');
+		var roomsRef = new Firebase('https://bloc-chat-73327.firebaseio.com/rooms');
 		var rooms = $firebaseArray(roomsRef);
 
 		return {
@@ -14,7 +14,7 @@
 		};
 	}
 
-angular
-	.module('blocchat')
-	.factory('Room', ['$firebaseArray', Room]);
+	angular
+		.module('blocchat')
+		.factory('Room', ['$firebaseArray', Room]);
 })();

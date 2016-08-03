@@ -1,11 +1,13 @@
-<div class="modal-body">
+<div class="modal-header">
 	<h3 class="modal-title">Create a New Room</h3>
-	<form>
-		<label for="roomName">Enter a Room Name</label>
-		<input required type='text' maxlength="15" autofocus placeholder="room name" ng-modal="room.name" />
-	</form>
-	<div class="modal-footer">
-		<button class="btn btn-primary" type="button" ng-click="modal.cancel()">Cancel</button>
-		<button class="btn btn-warning" type="button" ng-click="modal.addRoom()">Create a New Room</button>
+	<div class="modal-body">
+		<form>
+			<label for="roomName">Enter a Room Name</label>
+			<input required type='text' maxlength="15" autofocus placeholder="room name" ng-modal="room.name" />
+		</form>
+		<div class="modal-footer">
+			<button class="btn btn-primary" type="button" ng-click="modal.cancel()">Cancel</button>
+			<button class="btn btn-warning" type="button" ng-click="modal.addRoom()">Create a New Room</button>
+		</div>
 	</div>
 </div>

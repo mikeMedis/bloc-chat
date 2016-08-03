@@ -8,12 +8,12 @@
 		}
 
 		ctrl.cancel = function() {
-			uibModalInstance.dismiss();
+			$uibModalInstance.dismiss();
 		};
 
 	}
 
-angular
+	angular
 		.module('blocchat')
 		.controller('ModalCtrl', ['Room', '$uibModalInstance', '$scope', ModalCtrl]);
 })();
